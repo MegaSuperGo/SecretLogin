@@ -70,3 +70,10 @@ button:active {
     font-size: 0.9rem;
     color: #888;
 }
+
+.container h1 {
+    text-align: center;
+    margin: 0 0 20px 0;
+    font-size: 1.5rem;
+    color: white;
+}
