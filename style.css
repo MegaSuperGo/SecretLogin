@@ -1,0 +1,36 @@
+body {
+    background: #111;
+    color: white;
+    font-family: Arial;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #4a7cff;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#msg {
+    margin-top: 10px;
+}
