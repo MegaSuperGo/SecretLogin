@@ -1,36 +1,72 @@
+/* Fix sizing issues */
+* { box-sizing: border-box; }
+
 body {
-    background: #111;
-    color: white;
-    font-family: Arial;
+    /* Subtle gradient looks pro */
+    background: radial-gradient(circle at center, #1f1f1f, #0d0d0d);
+    color: #e0e0e0;
+    font-family: system-ui, -apple-system, sans-serif;
     display: flex;
     height: 100vh;
+    margin: 0;
     justify-content: center;
     align-items: center;
 }
 
 .container {
-    background: #222;
-    padding: 20px;
-    border-radius: 10px;
-    width: 300px;
+    background: #181818;
+    padding: 30px;
+    border-radius: 16px; /* Smoother corners */
+    width: 320px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.6); /* Pop effect */
+    border: 1px solid #333;
 }
 
 input {
     width: 100%;
-    padding: 8px;
-    margin: 6px 0;
+    padding: 12px;
+    margin: 8px 0;
+    background: #252525;
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: white;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Glow when you click inside */
+input:focus {
+    border-color: #4a7cff;
+    box-shadow: 0 0 8px rgba(74, 124, 255, 0.3);
 }
 
 button {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
+    margin-top: 12px;
     background: #4a7cff;
     border: none;
+    border-radius: 8px;
     color: white;
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 1rem;
     cursor: pointer;
+    transition: transform 0.1s, background 0.2s;
+}
+
+/* Hover animation */
+button:hover {
+    background: #3b63cc;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
 }
 
 #msg {
-    margin-top: 10px;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #888;
 }
